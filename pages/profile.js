@@ -1,14 +1,15 @@
 import React from 'react';
 import { withAuthSync } from '../utils/auth'
+import Nav from "../components/Nav";
 
-const Profile = (props) => {
-    console.log(props);
+const Profile = () => {
     return (
         <div>
-            <h1>This is profile page it should be private</h1>
+            <Nav>
+                <h1>Hi this is profile page and it's private</h1>
+            </Nav>
         </div>
-
-    )
+    );
 };
 
 export default withAuthSync(Profile);

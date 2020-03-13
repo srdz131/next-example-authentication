@@ -1,16 +1,14 @@
 import React from "react";
-import Link from 'next/link';
+import Nav from '../components/Nav';
+import {Home} from '../components/Home';
 
-export default function Index() {
+export default function Index(props) {
+    console.log(props);
     return (
         <div>
-            <Link href="/about">
-                <a>About Page</a>
-            </Link>
-            <Link href="/profile">
-                <a>Profile Page</a>
-            </Link>
-            <p>Hello Next.js</p>
+            <Nav >
+                <Home/>
+            </Nav>
         </div>
     );
 }
